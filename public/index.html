@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>CNvsAmericans CC</title>
-  <meta name="description" content="CNvsAmericans CCの大会結果ページです。Googleスプレッドシート由来のデータをJSONとして読み込み、公開用の表として表示します。" />
+  <title>バトグラ最強決定戦2026</title>
+  <meta name="description" content="バトグラ最強決定戦2026の大会結果ページです。Googleスプレッドシート由来のデータをJSONとして読み込み、公開用のポイント集計と順位集計として表示します。" />
 
-  <meta property="og:title" content="CNvsAmericans CC" />
-  <meta property="og:description" content="スプレッドシート風の大会結果公開ページ" />
+  <meta property="og:title" content="バトグラ最強決定戦2026" />
+  <meta property="og:description" content="バトグラ最強決定戦2026のポイント集計・順位集計ページ" />
   <meta property="og:type" content="website" />
 
   <link rel="stylesheet" href="./style.css" />
@@ -17,12 +17,12 @@
 <body>
   <main class="page-shell">
     <header class="hero">
-      <p class="eyebrow">Tournament Result</p>
+      <p class="eyebrow">Battlegrounds Championship</p>
 
-      <h1 id="event-title">CNvsAmericans CC</h1>
+      <h1 id="event-title">バトグラ最強決定戦2026</h1>
 
       <p class="lead">
-        Googleスプレッドシートで編集した大会結果をJSONとして読み込み、公開用の表として表示しています。
+        時渡ドリームマッチや裏頂上戦の結果ページと同じく、スプレッドシートで管理した試合結果を読み込み、各試合のポイントと順位を一覧で確認できる公開ページです。
       </p>
 
       <div class="meta-line">
@@ -55,8 +55,8 @@
 
     <footer class="footer-note">
       <p>
-        実運用では、<code>public_data</code> シート → Apps Script →
-        <code>/api/results</code> → この画面、という流れで表示します。
+        表示データは <code>public_data</code> シートから Apps Script を経由して取得します。
+        本番反映前の確認では <code>sample-data.json</code> の雛形データが表示されます。
       </p>
     </footer>
   </main>
